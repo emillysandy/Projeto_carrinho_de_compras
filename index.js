@@ -31,7 +31,7 @@ if (verProdutos.toUpperCase() === 'S') {
     const categorias = produtos.filter(item => item.categoria === qualCategoria)
       console.table(categorias); 
 
-} else { (verProdutos.toUpperCase() !== 'S') 
+}else{ (verProdutos.toUpperCase() !== 'S') 
     console.log('Esses são nossos produtos disponiveis!')
     console.table(produtos)
 }
@@ -93,15 +93,13 @@ function desconto(desc,arr){
         console.log(`TOTAL: ${totalPreco - calculando}`)
     
             console.log(`Digite um cupom valido`)
-    }
-        
-    
-}else{
+    }else {
         console.log(`DATA DA COMPRA: ${dataFormatada}`)
         console.log(`QUANTIDADE DE PRODUTOS: ${totalQuantidade}`)
         console.log(`SUBTOTAL: ${totalPreco}`)
         console.log(`TOTAL: ${totalPreco}`)
+    }
 }
-}
+
 desconto(cupomPerg, total)
 
